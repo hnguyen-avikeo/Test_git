@@ -2,13 +2,9 @@ name: Hello World
 
 on:
   push:
-    branches:
-      - main
-
+    branches: [main]
 jobs:
-  build:
+  say-hello:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Say Hello
-        run: echo "Hello, World!"
+      - run: echo "Hello, World!"
